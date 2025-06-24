@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mubshar - Professional Graphic Designer Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-gray-900 bg-opacity-95 backdrop-blur-sm">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold gradient-text">Mubshar</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link hover:text-purple-400">Home</a>
+                    <a href="#portfolio" class="nav-link hover:text-purple-400">Portfolio</a>
+                    <a href="#services" class="nav-link hover:text-purple-400">Services</a>
+                    <a href="#about" class="nav-link hover:text-purple-400">About</a>
+                    <a href="#pricing" class="nav-link hover:text-purple-400">Pricing</a>
+                    <a href="#contact" class="nav-link hover:text-purple-400">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-white focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+                <a href="#home" class="block py-2 hover:text-purple-400">Home</a>
+                <a href="#portfolio" class="block py-2 hover:text-purple-400">Portfolio</a>
+                <a href="#services" class="block py-2 hover:text-purple-400">Services</a>
+                <a href="#about" class="block py-2 hover:text-purple-400">About</a>
+                <a href="#pricing" class="block py-2 hover:text-purple-400">Pricing</a>
+                <a href="#contact" class="block py-2 hover:text-purple-400">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg min-h-screen flex items-center justify-center">
+        <div class="container mx-auto px-6 text-center">
+            <div class="animate-float">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                    Hi, I'm <span class="gradient-text">Mubshar</span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 text-gray-300">Professional Graphic Designer</p>
+                <p class="text-lg mb-12 text-gray-400 max-w-2xl mx-auto">
+                    Creating stunning visual experiences through innovative design solutions. 
+                    Specializing in branding, logo design, and digital graphics.
+                </p>
+                <div class="space-x-4">
+                    <a href="#portfolio" class="btn-gradient px-8 py-3 rounded-full text-white font-semibold inline-block">
+                        View My Work
+                    </a>
+                    <a href="#contact" class="border-2 border-purple-400 px-8 py-3 rounded-full text-purple-400 font-semibold inline-block hover:bg-purple-400 hover:text-white transition-all duration-300">
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section-padding bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 gradient-text">My Portfolio</h2>
+                <p class="text-xl text-gray-400">A showcase of my creative work and design projects</p>
+            </div>
+            
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap justify-center mb-12 space-x-2 space-y-2">
+                <button class="filter-btn active px-6 py-2 rounded-full border border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-white" data-filter="all">All</button>
+                <button class="filter-btn px-6 py-2 rounded-full border border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-white" data-filter="logo">Logo Design</button>
+                <button class="filter-btn px-6 py-2 rounded-full border border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-white" data-filter="branding">Branding</button>
+                <button class="filter-btn px-6 py-2 rounded-full border border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-white" data-filter="print">Print Design</button>
+                <button class="filter-btn px-6 py-2 rounded-full border border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-white" data-filter="digital">Digital Design</button>
+            </div>
+            
+            <!-- Portfolio Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="portfolio-item bg-gray-700 rounded-lg overflow-hidden" data-category="logo">
+                    <img src="https://cdn.prod.website-files.com/5de2db6d3719a1e2f3e4454c/66aabdcb912ccab7af8057fd_606513b2e2ca673d521586cb_logo-presentation-concept-3-all.jpeg" alt="Logo Design Project" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Brand Identity Design</h3>
+                        <p class="text-gray-400">Complete logo and branding package for corporate client</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item bg-gray-700 rounded-lg overflow-hidden" data-category="branding">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4tjnao9MPvJDIGkgPVLOMBhzHRLUlIv0QpTJ6qtP8i7QPjcOgkbDhLNFulEt_jjYPHMc&usqp=CAU" alt="Branding Project" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Stationery Design</h3>
+                        <p class="text-gray-400">Professional stationery design with modern aesthetics</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item bg-gray-700 rounded-lg overflow-hidden" data-category="digital">
+                    <img src="https://mir-s3-cdn-cf.behance.net/projects/808/11b4c3225782251.Y3JvcCwxMDgwLDg0NCwwLDM0.png" alt="Digital Design Project" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Digital Art Showcase</h3>
+                        <p class="text-gray-400">Creative digital artwork and illustrations</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item bg-gray-700 rounded-lg overflow-hidden" data-category="logo">
+                    <img src="https://www.110designs.com/images/logo-design-showcase-110designs.webp" alt="Logo Collection" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Logo Collection</h3>
+                        <p class="text-gray-400">Various logo designs for different industries</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item bg-gray-700 rounded-lg overflow-hidden" data-category="print">
+                    <img src="https://images.examples.com/wp-content/uploads/2017/11/Editable-Graphic-Design-Portfolio.jpg" alt="Print Design" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Print Portfolio</h3>
+                        <p class="text-gray-400">Professional print design and layout work</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item bg-gray-700 rounded-lg overflow-hidden" data-category="branding">
+                    <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_750,h_400/https://assets.designhill.com/design-blog/wp-content/uploads/2019/03/Pollen.jpg" alt="Brand Design" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Brand Identity</h3>
+                        <p class="text-gray-400">Modern brand identity with creative elements</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-padding bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 gradient-text">My Services</h2>
+                <p class="text-xl text-gray-400">Professional design services tailored to your needs</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="hover-scale bg-gray-800 p-8 rounded-lg text-center">
+                    <div class="text-4xl mb-4 gradient-text">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Logo Design</h3>
+                    <p class="text-gray-400">Custom logo designs that represent your brand identity and values perfectly.</p>
+                </div>
+                
+                <div class="hover-scale bg-gray-800 p-8 rounded-lg text-center">
+                    <div class="text-4xl mb-4 gradient-text">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Branding</h3>
+                    <p class="text-gray-400">Complete branding solutions including color schemes, typography, and style guides.</p>
+                </div>
+                
+                <div class="hover-scale bg-gray-800 p-8 rounded-lg text-center">
+                    <div class="text-4xl mb-4 gradient-text">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Web Design</h3>
+                    <p class="text-gray-400">Modern, responsive web designs that engage users and drive conversions.</p>
+                </div>
+                
+                <div class="hover-scale bg-gray-800 p-8 rounded-lg text-center">
+                    <div class="text-4xl mb-4 gradient-text">
+                        <i class="fas fa-print"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Print Design</h3>
+                    <p class="text-gray-400">Professional print materials including brochures, flyers, and business cards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">About Me</h2>
+                    <p class="text-lg text-gray-300 mb-6">
+                        I'm Mubshar, a passionate graphic designer with over 5 years of experience creating 
+                        visual solutions that make brands stand out. My expertise spans across logo design, 
+                        branding, web design, and print media.
+                    </p>
+                    <p class="text-lg text-gray-300 mb-8">
+                        I believe that great design is not just about making things look beautiful, but 
+                        about solving problems and communicating effectively. Every project I work on is 
+                        approached with creativity, precision, and a deep understanding of the client's goals.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold">Logo Design</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold">Branding</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold">Web Design</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold">Print Design</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <img src="https://admin.shillingtoneducation.com/images/U4GxdbvDvrkjD_bE4AV7e2iBEBQ=/444/width-3200%7Cformat-jpeg/lauren_hom.png" alt="Designer at work" class="rounded-lg shadow-2xl mx-auto">
+                    <div class="mt-8 grid grid-cols-3 gap-4 text-center">
+                        <div>
+                            <div class="text-3xl font-bold gradient-text">150+</div>
+                            <div class="text-gray-400">Projects</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold gradient-text">120+</div>
+                            <div class="text-gray-400">Happy Clients</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold gradient-text">5+</div>
+                            <div class="text-gray-400">Years Experience</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="section-padding bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 gradient-text">Pricing Plans</h2>
+                <p class="text-xl text-gray-400">Choose the perfect package for your design needs</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Basic Plan -->
+                <div class="pricing-card bg-gray-800 p-8 rounded-lg text-center">
+                    <h3 class="text-2xl font-bold mb-4">Basic</h3>
+                    <div class="text-4xl font-bold mb-6 gradient-text">$299</div>
+                    <ul class="space-y-3 mb-8 text-gray-300">
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>Logo Design</li>
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>3 Concepts</li>
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>2 Revisions</li>
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>High-res Files</li>
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>7 Days Delivery</li>
+                    </ul>
+                    <button class="btn-gradient w-full py-3 rounded-full font-semibold">Choose Plan</button>
+                </div>
+                
+                <!-- Standard Plan -->
+                <div class="pricing-card bg-gray-800 p-8 rounded-lg text-center border-2 border-purple-400 relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-purple-400 text-white px-4 py-1 rounded-full text-sm">
+                        Most Popular
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Standard</h3>
+                    <div class="text-4xl font-bold mb-6 gradient-text">$599</div>
+                    <ul class="space-y-3 mb-8 text-gray-300">
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>Logo + Branding</li>
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>5 Concepts</li>
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>3 Revisions</li>
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>Brand Guidelines</li>
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>Business Cards</li>
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>5 Days Delivery</li>
+                    </ul>
+                    <button class="btn-gradient w-full py-3 rounded-full font-semibold">Choose Plan</button>
+                </div>
+                
+                <!-- Premium Plan -->
+                <div class="pricing-card bg-gray-800 p-8 rounded-lg text-center">
+                    <h3 class="text-2xl font-bold mb-4">Premium</h3>
+                    <div class="text-4xl font-bold mb-6 gradient-text">$999</div>
+                    <ul class="space-y-3 mb-8 text-gray-300">
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>Complete Brand Package</li>
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>Unlimited Concepts</li>
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>Unlimited Revisions</li>
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>Brand Guidelines</li>
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>Stationery Design</li>
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>Website Design</li>
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>3 Days Delivery</li>
+                    </ul>
+                    <button class="btn-gradient w-full py-3 rounded-full font-semibold">Choose Plan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 gradient-text">Get In Touch</h2>
+                <p class="text-xl text-gray-400">Ready to start your next project? Let's discuss your ideas!</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <div class="text-purple-400 text-xl mr-4">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Email</div>
+                                <div class="text-gray-400">mubshar.design@gmail.com</div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="text-purple-400 text-xl mr-4">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Phone</div>
+                                <div class="text-gray-400">+92 300 1234567</div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="text-purple-400 text-xl mr-4">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Location</div>
+                                <div class="text-gray-400">Lahore, Pakistan</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="text-xl font-semibold mb-4">Follow Me</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-2xl text-purple-400 hover:text-purple-300 transition-colors">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="text-2xl text-purple-400 hover:text-purple-300 transition-colors">
+                                <i class="fab fa-dribbble"></i>
+                            </a>
+                            <a href="#" class="text-2xl text-purple-400 hover:text-purple-300 transition-colors">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="text-2xl text-purple-400 hover:text-purple-300 transition-colors">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <form class="space-y-6">
+                        <div>
+                            <input type="text" placeholder="Your Name" class="w-full p-4 bg-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400">
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Your Email" class="w-full p-4 bg-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400">
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Subject" class="w-full p-4 bg-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400">
+                        </div>
+                        <div>
+                            <textarea rows="6" placeholder="Your Message" class="w-full p-4 bg-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400"></textarea>
+                        </div>
+                        <button type="submit" class="btn-gradient w-full py-4 rounded-lg font-semibold">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <div class="text-2xl font-bold gradient-text mb-4">Mubshar</div>
+            <p class="text-gray-400 mb-4">Professional Graphic Designer</p>
+            <p class="text-gray-500">&copy; 2024 Mubshar. All rights reserved.</p>
+        </div>
+    </footer>
+
+   <script src="script.js"></script>
+  
+</body>
+</html>
